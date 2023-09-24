@@ -3,15 +3,17 @@
 #
 # SPDX-License-Identifier: MIT
 
-name: Lint YAML
+name: Lint Markdown
 
 on: [push, pull_request, workflow_dispatch]  # yamllint disable-line rule:truthy
 
 jobs:
-  lint-yaml:
+  lint-markdown:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Lint YAML
-        uses: ibiqlik/action-yamllint@v3
+      - name: Lint Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v13
+        with:
+          globs: '**/*.md'
