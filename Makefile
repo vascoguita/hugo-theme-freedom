@@ -5,3 +5,7 @@
 .PHONY: lint-yaml
 lint-yaml:
 	yamllint .
+
+.PHONY: lint-markdown
+lint-markdown:
+	markdownlint-cli2 '**/*.md'
