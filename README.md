@@ -1,7 +1,7 @@
 <!--
 SPDX-FileCopyrightText: 2023 Vasco Guita <vasco@guita.org>
 
-SPDX-License-Identifier: MIT
+SPDX-License-Identifier: CC-BY-4.0
 -->
 
 # freedom
