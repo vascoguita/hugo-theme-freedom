@@ -1,0 +1,27 @@
+---
+# SPDX-FileCopyrightText: 2023 Vasco Guita <vasco@guita.org>
+#
+# SPDX-License-Identifier: MIT
+
+header:
+  - license:
+      spdx-id: MIT
+      content: |
+        SPDX-FileCopyrightText: 2023 Vasco Guita <vasco@guita.org>
+
+        SPDX-License-Identifier: MIT
+    paths-ignore:
+      - '**/*.md'
+      - 'LICENSE'
+    license-location-threshold: 1
+    comment: on-failure
+  - license:
+      spdx-id: CC-BY-4.0
+      content: |
+        SPDX-FileCopyrightText: 2023 Vasco Guita <vasco@guita.org>
+
+        SPDX-License-Identifier: CC-BY-4.0
+    paths:
+      - '**/*.md'
+    license-location-threshold: 1
+    comment: on-failure

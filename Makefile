@@ -6,7 +6,7 @@
 all: test
 
 .PHONY: test
-test: lint-yaml lint-markdown lint-makefile
+test: lint-yaml lint-markdown lint-makefile check-license-headers
 
 .PHONY: lint-yaml
 lint-yaml:
@@ -19,6 +19,10 @@ lint-markdown:
 .PHONY: lint-makefile
 lint-makefile:
 	checkmake Makefile
+
+.PHONY: check-license-headers
+check-license-headers:
+	license-eye header check
 
 .PHONY: clean
 clean:
