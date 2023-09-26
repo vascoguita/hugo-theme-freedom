@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: 2023 Vasco Guita <vasco@guita.org>
+#
+# SPDX-License-Identifier: MIT
+
+/public/
+/resources/_gen/
+/.hugo_build.lock
