@@ -13,6 +13,7 @@ header:
     paths-ignore:
       - '**/*.md'
       - 'LICENSE'
+      - 'go.sum'
     license-location-threshold: 1
     comment: on-failure
   - license:

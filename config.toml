@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: 2023 Vasco Guita <vasco@guita.org>
+#
+# SPDX-License-Identifier: MIT
+
+[module]
+[[module.imports]]
+path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
