@@ -6,11 +6,15 @@
 all: test
 
 .PHONY: test
-test: lint-yaml lint-markdown lint-makefile check-license-headers
+test: lint-yaml lint-toml lint-markdown lint-makefile check-license-headers
 
 .PHONY: lint-yaml
 lint-yaml:
 	yamllint .
+
+.PHONY: lint-toml
+lint-toml:
+	taplo lint
 
 .PHONY: lint-markdown
 lint-markdown:

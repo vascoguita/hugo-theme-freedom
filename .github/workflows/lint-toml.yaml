@@ -1,0 +1,19 @@
+---
+# SPDX-FileCopyrightText: 2023 Vasco Guita <vasco@guita.org>
+#
+# SPDX-License-Identifier: MIT
+
+name: Lint TOML
+
+on: [push, pull_request, workflow_dispatch]  # yamllint disable-line rule:truthy
+
+jobs:
+  lint-toml:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Lint TOML
+        uses: docker://tamasfe/taplo
+        with:
+          args: lint
